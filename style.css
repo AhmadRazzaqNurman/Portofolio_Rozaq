@@ -1,183 +1,495 @@
-/* Reset dasar */
+/* =========================================
+   VARIABEL & RESET
+   ========================================= */
+:root {
+  --color-primary: #234d69;
+  --color-primary-hover: #1d4ed8;
+  --color-accent: #3b82f6;
+  --color-dark: #1a1a1a;
+  --color-muted: #aaaaaa;
+  --color-text: #333333;
+  --color-bg: #f4f8fc;
+  --color-bg-grey: #e7eff6;
+  --color-contact: #303f70;
+  --color-border: #dce4ec;
+  --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* supaya judul tidak tertutup navbar */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f4f8fc;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-.navbar {
-    background: #1a1a1a;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+img {
+  max-width: 100%;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.navbar {
+  background: var(--color-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .logo a {
-    font-size: 28px;
-    font-weight: bold;
-    color: #aaa;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-muted);
 }
 
 .menu {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
 }
 
 .menu li a {
-    color: #aaa;
-    font-weight: 500;
-    transition: 0.3s;
+  color: var(--color-muted);
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .menu li a:hover {
-    color: #3b82f6;
+  color: var(--color-accent);
 }
 
-/* Home */
+/* =========================================
+   HOME
+   ========================================= */
 header {
-    background: linear-gradient(to right, #eef2f7, #f4f8fc);
-    padding: 80px 0;
+  background: linear-gradient(to right, #eef2f7, var(--color-bg));
+  padding: 80px 0;
 }
 
 .home-wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .home-text {
-    flex: 1;
+  flex: 1;
 }
 
 .home-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 44px;
+  line-height: 1.25;
+  margin-bottom: 10px;
 }
 
 .home-text h1 span {
-    color: #3b82f6;
+  display: block;
+  color: var(--color-accent);
 }
 
-.home-text h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-.home-text p {
-    margin-bottom: 30px;
-    font-size: 18px;
+.home-text .subtitle {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
-    background: #234d69;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: 600;
-    display: inline-block;
-    transition: background 0.3s;
+  display: inline-block;
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+  background: var(--color-primary-hover);
 }
 
 .home-image img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 17%;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 17%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Section */
+/* =========================================
+   SECTION UMUM
+   ========================================= */
 .section {
-    padding: 60px 0;
-    text-align: center;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .grey-section {
-    background: #e7eff6;
+  background: var(--color-bg-grey);
 }
 
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+.section h2,
+.contact h2 {
+  font-size: 34px;
+  margin-bottom: 35px;
 }
 
-.section p {
-    font-size: 18px;
-    margin-bottom: 15px;
+.section > .container > p {
+  font-size: 18px;
+}
+
+/* =========================================
+   CARD (Pendidikan & Kontak)
+   ========================================= */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.card h3 {
+  font-size: 21px;
+  color: var(--color-primary);
+}
+
+.card .card-meta {
+  font-weight: 500;
+}
+
+.card .card-period {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+/* =========================================
+   KETERAMPILAN
+   ========================================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.skill-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-bg-grey);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags li {
+  background: #eaf1f8;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.skill-tags li:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+/* =========================================
+   PROJEK & KEPANITIAAN
+   ========================================= */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  text-align: left;
 }
 
 .experience-item {
-    margin-bottom: 30px;
-    text-align: left;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
 }
 
 .experience-item h3 {
-    font-size: 24px;
-    color: #234d69;
-    margin-bottom: 10px;
+  font-size: 21px;
+  color: var(--color-primary);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.experience-item .experience-period {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 12px;
+}
+
+.deskripsi-proyek {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
 
 .experience-item ul {
-    padding-left: 20px;
+  padding-left: 20px;
+  list-style: disc;
 }
 
 .experience-item ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 3px;
 }
 
-/* Footer */
+.gallery-title {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Galeri foto kecil berjajar */
+.project-gallery {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 2px 2px 10px;
+  margin-bottom: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: #b8c9d8 transparent;
+}
+
+.project-gallery a {
+  display: block;
+  flex: 0 0 150px;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.project-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-gallery a:hover img {
+  transform: scale(1.08);
+}
+
+/* Tombol projek */
+.project-link {
+  display: inline-block;
+  padding: 9px 16px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: var(--color-primary-hover);
+}
+
+/* =========================================
+   KONTAK
+   ========================================= */
+.contact {
+  padding: 60px 0;
+  text-align: center;
+  color: var(--color-border);
+  background-color: var(--color-contact);
+}
+
+.contact-card {
+  color: var(--color-text);
+  text-align: center;
+}
+
+.contact-card p {
+  margin-bottom: 8px;
+}
+
+.contact-card a {
+  color: var(--color-primary);
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
 footer {
-    background: #1a1a1a;
-    color: #aaa;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 40px;
+  background: var(--color-dark);
+  color: var(--color-muted);
+  text-align: center;
+  padding: 30px 0;
 }
 
-/* Responsive */
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-item .project-link {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+/* Tablet ke bawah */
 @media (max-width: 768px) {
-    .home-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
+  .nav-container {
+    justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .home-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 34px;
+  }
+}
+
+/* Kepanitiaan & Pengalaman Kerja berdampingan (kiri-kanan) */
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 24px;
+  text-align: left;
+}
+
+.split-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.split-column h2 {
+  text-align: center;
+}
+
+.split-column .experience-item {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .split-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  header {
+    padding: 50px 0;
+  }
+
+  .section h2,
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .experience-item {
+    padding: 18px;
+  }
+
+  .experience-item h3 {
+    font-size: 18px;
+  }
+
+  .project-gallery a {
+    flex-basis: 130px;
+    width: 130px;
+    height: 90px;
+  }
 }

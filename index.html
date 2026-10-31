@@ -3,111 +3,354 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Ahmad Razzaq Nurman, Web Developer & Software Engineer.">
   <title>Portofolio Ahmad Razzaq Nurman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="container nav-container">
-      <div class="logo"><a href="#">Portofolio</a></div>
+      <div class="logo"><a href="#home">Portofolio</a></div>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#education">Pendidikan</a></li>
-        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#skills">Keterampilan</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#committee">Kepanitiaan</a></li>
+        <li><a href="#work">Pengalaman Kerja</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ===== HOME ===== -->
   <header id="home">
     <div class="container home-wrapper">
       <div class="home-text">
-        <h1>Halo, Saya</h1>
-        <h1>Ahmad Razzaq Nurman</h1>
-        <p class="subtitle">Web Developer & UI/UX Designer</p>
+        <h1>Halo, Saya <span>Ahmad Razzaq Nurman</span></h1>
+        <p class="subtitle">Web Developer &amp; Software Engineer</p>
         <div class="btn-wrapper">
           <a href="#contact" class="btn-primary">Hubungi Saya</a>
         </div>
       </div>
       <div class="home-image">
-        <img src="MyFoto.JPG" alt="Foto Profil">
+        <img src="images/Foto Formal 5.png" alt="Foto Ahmad Razzaq Nurman">
       </div>
     </div>
   </header>
 
+  <!-- ===== TENTANG ===== -->
   <section id="about" class="section grey-section">
     <div class="container">
       <h2>Tentang Saya</h2>
-      <p>Mahasiswa Program Studi D3 Teknik Informatika di Politeknik Negeri Indramayu dengan minat yang kuat dalam pengembangan perangkat lunak. Saya memiliki kemampuan untuk bekerja secara individu maupun dalam tim, serta berkomitmen tinggi untuk terus belajar dan berkembang di bidang teknologi informasi. Dengan semangat untuk berinovasi, saya berharap dapat berkontribusi dalam menciptakan solusi digital yang berdampak positif dan bermanfaat bagi masyarakat luas.</p>
+      <p>Fresh graduate D3 Teknik Informatika dengan IPK 3.78, saya memiliki pengalaman magang yang berfokus pada pengembangan dan pengelolaan website. Ketertarikan saya pada dunia teknologi karena saya menikmati proses ketika sebuah kebutuhan atau permasalahan dapat diterjemahkan menjadi sebuah sistem yang bisa digunakan. Latar belakang D3 Teknik Informatika membuat saya banyak belajar tentang pengembangan aplikasi, khususnya aplikasi berbasis web, dan mendorong saya untuk terus mengembangkan kemampuan di bidang Software Development.</p>
     </div>
   </section>
 
+  <!-- ===== PENDIDIKAN ===== -->
   <section id="education" class="section">
     <div class="container">
       <h2>Pendidikan</h2>
+
       <div class="card">
-        <h3>D3 - Teknik Informatika</h3>
-        <p>Politeknik Negeri Indramayu</p>
-        <p>2023 - Sekarang</p>
-        <p>Program studi ini menekankan pada kemampuan individu dalam merancang dan mengembangkan ragam algoritma komputasi (teori komputasi dan algoritma). Kurikulumnya sangat kental dengan ilmu pengetahuan terkait dengan logika matematika, komputasi, dan algoritma, yang dalam model terapannya dinyatakan dalam
-          pengembangan program komputer..</p>
+        <h3>SMA Negeri 1 Sumber</h3>
+        <p class="card-meta">MIPA (Matematika &amp; Ilmu Pengetahuan Alam)</p>
+        <p class="card-period">2020 - 2023</p>
+        <p>Menyelesaikan pendidikan menengah atas dengan memperoleh pengetahuan dasar dalam bidang akademik, mengembangkan kemampuan berpikir kritis, serta membangun kedisiplinan dan tanggung jawab sebagai bekal untuk melanjutkan pendidikan ke jenjang perguruan tinggi. Selama SMA, aktif sebagai Pengurus Inti Ekstrakurikuler ROHIS.</p>
+      </div>
+
+      <div class="card">
+        <h3>Politeknik Negeri Indramayu</h3>
+        <p class="card-meta">D3 - Teknik Informatika</p>
+        <p class="card-period">2023 - 2026</p>
+        <p>Disini saya menempuh pendidikan D3 Informatika dengan mempelajari pengembangan perangkat lunak, pemrograman web, database, analisis dan perancangan sistem, serta pengujian aplikasi. Selama perkuliahan, mengerjakan berbagai proyek pengembangan sistem, Seperti projek Tugas Akhir SIREMA (Sistem Rekomendasi Tempat Magang Mahasiswa), projek E-Commerce Travel dan proyek lainnya. Memiliki pengalaman menggunakan HTML, CSS, JavaScript, PHP, Laravel, Vue.js, serta database dalam proses pengembangan aplikasi.</p>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section grey-section">
+  <!-- ===== KETERAMPILAN ===== -->
+  <section id="skills" class="section grey-section">
     <div class="container">
-      <h2>Pengalaman</h2>
+      <h2>Keterampilan</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul class="skill-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+            <li>Vuetify</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Backend &amp; Database</h3>
+          <ul class="skill-tags">
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>REST API</li>
+            <li>JWT Authentication</li>
+            <li>MySQL</li>
+            <li>Midtrans</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Desain &amp; Analisis</h3>
+          <ul class="skill-tags">
+            <li>Figma</li>
+            <li>UI/UX Design</li>
+            <li>Analisis &amp; Perancangan Sistem</li>
+
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul class="skill-tags">
+            <li>Kerja Tim</li>
+            <li>Kerja Mandiri</li>
+            <li>Komunikasi</li>
+            <li>Koordinasi Event</li>
+            <li>Dokumentasi Proyek</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJEK ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projek</h2>
+
       <div class="experience-grid">
-        <div class="experience-item">
-          <h3>Sistem Informasi Pembelajaran TKQ Nahdlatut Tujjar</h3>
-          <p>(Maret - Juni 2024)</p>
-          <ul>
-            <li>Mengembangkan perangkat lunak sesuai kebutuhan mitra.</li>
-            <li>Membuat dokumentasi projek.</li>
-            <li>HTML, CSS, PHP.</li>
-          </ul>
-        </div>
 
-        <div class="experience-item">
-          <h3>Sistem Informasi Pemesanan Haisist Salon</h3>
-          <p>(Agustus - Desember 2024)</p>
-          <ul>
-            <li>Menggunakan HTML, CSS, PHP, dan Laravel.</li>
-            <li>Desain UI menggunakan Figma.</li>
-          </ul>
-        </div>
+        <!-- Projek 1 -->
+        <article class="experience-item">
+          <h3>Membuat System Design &amp; Documentation (SRS &amp; SDD) (Team)</h3>
+          <p class="experience-period">Penyusunan dokumentasi dan perancangan sistem pada Sistem Manajemen Guru TKQ &amp; SDIT Nahdlatut Tujjar</p>
 
-        <div class="experience-item">
+          <p class="deskripsi-proyek">Proyek dokumentasi rekayasa perangkat lunak untuk mendefinisikan kebutuhan dan merancang sistem manajemen sekolah yang mencakup pengelolaan absensi, nilai siswa, data guru dan siswa, serta agenda akademik. Proyek akademik ini dikerjakan dalam mata kuliah Rekayasa Perangkat Lunak di Politeknik Negeri Indramayu. Fokus pekerjaan adalah mendokumentasikan kebutuhan sistem melalui SRS dan menyusun rancangan teknis melalui SDD sebagai acuan pengembangan perangkat lunak.</p>
+
+          <p class="deskripsi-proyek">Kompetensi yang ditunjukkan: Analisis Kebutuhan, Software Documentation, System Design, UML Modeling, Database Design, dan Functional Requirements.</p>
+
+          <a href="https://drive.google.com/drive/folders/1hTOB9DH8_5CjQJBgLKo6bI4B2_VsvaVa?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Proyek ↗</a>
+        </article>
+
+
+
+        
+        <!-- Projek 4 -->
+        <article class="experience-item">
+          <h3>Proyek - Sistem Manajemen Guru Pada TKQ &amp; SDIT Nahdlatut Tujjar (Team)</h3>
+          <p class="experience-period">Februari - Juni 2025 (Proyek Mobile Apps)</p>
+
+          <ul>
+            <li>Terlibat dalam membuat desain UI menggunakan Figma.</li>
+            <li>Membuat dokumentasi untuk kebutuhan projek seperti proposal, SRS, dan SDD.</li>
+            <li>Menggunakan bahasa pemrograman Dart dengan framework Flutter.</li>
+            <li>Mengembangkan perangkat lunak sesuai dengan kebutuhan mitra.</li>
+            <li>Terlibat dalam pembuatan dari sisi frontend.</li>
+            <li>Membuat UML untuk kebutuhan alur proses suatu sistem.</li>
+          </ul>
+
+          <!-- TODO: ganti foto dengan tangkapan layar aplikasi Sistem Manajemen Guru (sekarang masih foto salon) -->
+          <h4 class="gallery-title">Dokumentasi Proyek</h4>
+          <div class="project-gallery">
+            <a href="images/Dart/Login.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/Dart/Login.png" alt="Dokumentasi aplikasi Sistem Manajemen Guru 1" loading="lazy">
+            </a>
+            <a href="images/Dart/Absensi.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/Dart/Absensi.png" alt="Dokumentasi aplikasi Sistem Manajemen Guru 2" loading="lazy">
+            </a>
+            <a href="images/Dart/Dashboard.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/Dart/Dashboard.png" alt="Dokumentasi aplikasi Sistem Manajemen Guru 3" loading="lazy">
+            </a>
+            <a href="images/Dart/Absensi TKQ.png"_blank" rel="noopener noreferrer">
+              <img src="images/Dart/Absensi TKQ.png" alt="Dokumentasi aplikasi Sistem Manajemen Guru 3" loading="lazy">
+            </a>
+            <a href="images/Dart/Absensi SDIT.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/Dart/Absensi SDIT.png" alt="Dokumentasi aplikasi Sistem Manajemen Guru 3" loading="lazy">
+            </a>
+          </div>
+
+          <!-- TODO: ganti dengan link repositori yang sebenarnya -->
+          <a href="https://drive.google.com/drive/folders/1hTOB9DH8_5CjQJBgLKo6bI4B2_VsvaVa?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Proyek ↗</a>
+        </article>
+
+        <!-- Projek 5 -->
+        <article class="experience-item">
+          <h3>Projek Website E-Commerce Travel</h3>
+          <p class="experience-period">Projek Magang (Agustus - Desember 2025)</p>
+
+          <p class="deskripsi-proyek">Travelola merupakan proyek website e-commerce di bidang travel yang dibuat untuk memudahkan pengguna dalam mencari informasi dan melakukan pemesanan paket perjalanan secara online. Website ini dikembangkan dengan beberapa fitur utama, mulai dari melihat daftar paket perjalanan, memilih detail paket yang diinginkan, melakukan booking, mengelola keranjang, hingga melihat riwayat transaksi. Selain itu, Travelola dilengkapi sistem pembayaran online menggunakan Midtrans agar proses transaksi lebih mudah dan praktis.</p>
+
+          <ul>
+            <li>Mengembangkan website e-commerce travel Travelola menggunakan Vue.js, Vuetify, Laravel, dan MySQL.</li>
+            <li>Membangun fitur pengelolaan paket perjalanan, detail paket, booking, keranjang, dan riwayat transaksi.</li>
+            <li>Mengintegrasikan payment gateway Midtrans untuk mendukung proses pembayaran online.</li>
+            <li>Menerapkan JWT Authentication dan sistem hak akses berdasarkan peran Admin dan User.</li>
+            <li>Mengembangkan REST API untuk menghubungkan frontend, backend, dan database.</li>
+            <li>Mengintegrasikan seluruh fitur untuk mendukung proses pemesanan perjalanan secara terstruktur.</li>
+          </ul>
+
+          <!-- TODO: ganti foto dengan dokumentasi projek Travelola -->
+          <h4 class="gallery-title">Dokumentasi Proyek</h4>
+          <div class="project-gallery">
+            <a href="images/Travelola/Login.png" target="_blank" rel="noopener noreferrer"><img src="images/Travelola/Login.png" alt="Dokumentasi projek Travelola 1" loading="lazy"></a>
+            <a href="images/Travelola/Beranda.png" target="_blank" rel="noopener noreferrer"><img src="images/Travelola/Beranda.png" alt="Dokumentasi projek Travelola 2" loading="lazy"></a>
+            <a href="images/Travelola/Regis.png" target="_blank" rel="noopener noreferrer"><img src="images/Travelola/Regis.png" alt="Dokumentasi projek Travelola 3" loading="lazy"></a>
+            <a href="images/Travelola/Riwayat.png" target="_blank" rel="noopener noreferrer"><img src="images/Travelola/Riwayat.png" alt="Dokumentasi projek Travelola 4" loading="lazy"></a>
+            <a href="images/Travelola/wisata.png" target="_blank" rel="noopener noreferrer"><img src="images/Travelola/wisata.png" alt="Dokumentasi projek Travelola 5" loading="lazy"></a>
+            
+          </div>
+
+          <!-- TODO: ganti dengan link dokumentasi yang sebenarnya -->
+          <a href="https://drive.google.com/drive/folders/1hTOB9DH8_5CjQJBgLKo6bI4B2_VsvaVa?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Dokumentasi ↗</a>
+        </article>
+
+        <!-- Projek 6 -->
+        <article class="experience-item">
+          <h3>SIREMA – Sistem Rekomendasi Tempat Magang Mahasiswa di Polindra</h3>
+          <p class="experience-period">Proyek Tugas Akhir (Maret - Juli 2026)</p>
+
+          <p class="deskripsi-proyek">Mengembangkan sistem rekomendasi tempat magang mahasiswa berbasis web menggunakan metode Analytical Hierarchy Process (AHP) untuk menentukan bobot kriteria dan Weighted Aggregated Sum Product Assessment (WASPAS) untuk melakukan perangkingan alternatif tempat magang berdasarkan kesesuaian kompetensi, minat mahasiswa, jarak, serta biaya akomodasi dan kehidupan.</p>
+
+          <ul>
+            <li>Menganalisis kebutuhan sistem dan merancang alur proses rekomendasi tempat magang mahasiswa.</li>
+            <li>Mengimplementasikan metode AHP, termasuk perbandingan berpasangan dan pengujian konsistensi menggunakan Consistency Ratio (CR).</li>
+            <li>Mengimplementasikan metode WASPAS untuk normalisasi data, perhitungan nilai preferensi, dan perangkingan alternatif.</li>
+            <li>Merancang dan mengimplementasikan antarmuka serta basis data untuk mendukung proses rekomendasi.</li>
+            <li>Mengembangkan sistem dengan pendekatan Iterative Development melalui tahapan perencanaan, analisis, perancangan, implementasi, dan pengujian.</li>
+          </ul>
+
+          <!-- TODO: ganti foto dengan dokumentasi projek SIREMA -->
+          <h4 class="gallery-title">Dokumentasi Kegiatan</h4>
+          <div class="project-gallery">
+            <a href="images/Sirema/Welcome.png" target="_blank" rel="noopener noreferrer"><img src="images/Sirema/Welcome.png" alt="Dokumentasi acara SEF" loading="lazy"></a>
+            <a href="images/Sirema/Welcome 2.png" target="_blank" rel="noopener noreferrer"><img src="images/Sirema/Welcome 2.png" alt="Dokumentasi tim SEF" loading="lazy"></a>
+            <a href="images/Sirema/Login.png" target="_blank" rel="noopener noreferrer"><img src="images/Sirema/Login.png" alt="Dokumentasi kegiatan SEF 3" loading="lazy"></a>
+            <a href="images/Sirema/Regis.png" target="_blank" rel="noopener noreferrer"><img src="images/Sirema/Regis.png" alt="Dokumentasi kegiatan SEF 4" loading="lazy"></a>
+            <a href="images/Sirema/Dashboard.png" target="_blank" rel="noopener noreferrer"><img src="images/Sirema/Dashboard.png" alt="Dokumentasi kegiatan SEF 5" loading="lazy"></a>
+          </div>
+
+          <!-- TODO: ganti dengan link dokumentasi yang sebenarnya -->
+          <a href="https://drive.google.com/drive/folders/1hTOB9DH8_5CjQJBgLKo6bI4B2_VsvaVa?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Dokumentasi ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEPANITIAAN ===== -->
+  <section id="committee" class="section grey-section">
+    <div class="container">
+      <div class="split-grid">
+
+        <!-- Kiri: Kepanitiaan -->
+        <div class="split-column">
+          <h2>Kepanitiaan</h2>
+
+        <article class="experience-item">
           <h3>Sman1s Education Fair - Project Officer</h3>
-          <p>(Juni 2024 - Januari 2025)</p>
+          <p class="experience-period">Juni 2024 - Januari 2025</p>
+
+          <p class="deskripsi-proyek">kegiatan pameran pendidikan dan campus expo tahunan yang diselenggarakan 
+            oleh forum alumni SMAN 1 Sumber, Memperkenalkan berbagai Perguruan Tinggi Negeri (PTN), 
+            Perguruan Tinggi Swasta (PTS), dan Perguruan Tinggi Kedinasan (PTK) dari berbagai provinsi 
+            di Indonesia kepada siswa-siswi kelas.  Memberikan bimbingan, wawasan, serta wadah berbagi 
+            informasi langsung antara siswa dengan perwakilan mahasiswa dari masing-masing kampus.</p>
+
           <ul>
             <li>Perencanaan dan koordinasi event.</li>
+            <li>Mengkoordinasi kepanitiaan beserta unsur yang terlibat.</li>
+            <li>Memberikan arahan dan pengambilan keputusan.</li>
             <li>Mengelola 29 kampus peserta.</li>
-            <li>Seminar & Expo Organizer.</li>
+            <li>Seminar dan Expo Organizer.</li>
           </ul>
+
+          <h4 class="gallery-title">Dokumentasi Kegiatan</h4>
+          <div class="project-gallery">
+            <a href="images/SEF 1.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 1.jpeg" alt="Dokumentasi acara SEF" loading="lazy"></a>
+            <a href="images/SEF 2.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 2.jpeg" alt="Dokumentasi tim SEF" loading="lazy"></a>
+            <a href="images/SEF 3.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 3.jpeg" alt="Dokumentasi kegiatan SEF 3" loading="lazy"></a>
+            <a href="images/SEF 4.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 4.jpeg" alt="Dokumentasi kegiatan SEF 4" loading="lazy"></a>
+            <a href="images/SEF 5.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 5.jpeg" alt="Dokumentasi kegiatan SEF 5" loading="lazy"></a>
+            <a href="images/SEF 6.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 6.jpeg" alt="Dokumentasi kegiatan SEF 6" loading="lazy"></a>
+            <a href="images/SEF 7.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 7.jpeg" alt="Dokumentasi kegiatan SEF 7" loading="lazy"></a>
+            <a href="images/SEF 8.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/SEF 8.jpeg" alt="Dokumentasi kegiatan SEF 8" loading="lazy"></a>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1hTOB9DH8_5CjQJBgLKo6bI4B2_VsvaVa?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Dokumentasi ↗</a>
+        </article>
         </div>
+
+        <!-- Kanan: Pengalaman Kerja -->
+        <div class="split-column" id="work">
+          <h2>Pengalaman Kerja</h2>
+
+        <!-- TODO: ganti seluruh isi di bawah dengan pengalaman kerja Anda.
+             Untuk menambah pengalaman lain, salin satu blok <article> ini. -->
+        <article class="experience-item">
+          <h3>Web Developer & SEO - CV Asian Technology Inspiration (Jasawebsite.biz)</h3>
+          <p class="experience-period">Juli - Desember 2025</p>
+
+          <p class="deskripsi-proyek">Selama magang di JasaWebsite.Biz, saya terlibat dalam beberapa pekerjaan yang berkaitan 
+            dengan pengembangan website, pengelolaan konten, optimasi SEO, serta pelayanan pelanggan. 
+            Saya mengembangkan website e-commerce travel bernama Travelola menggunakan Laravel dan Vue.js, 
+            termasuk mengintegrasikan payment gateway Midtrans untuk mendukung transaksi pembayaran online.
+             Selain itu, saya menggunakan WordPress untuk membuat dan mengembangkan website beserta templatenya. 
+             Saya juga membuat artikel SEO menggunakan teknik Spintax untuk kebutuhan optimasi konten website. 
+             Di sisi lain, saya menjalankan tugas sebagai Customer Service Admin dan Technical Support dengan 
+             membantu menangani kebutuhan pelanggan serta memberikan dukungan teknis terkait layanan dan website.</p>
+
+
+          <h4 class="gallery-title">Dokumentasi Kegiatan</h4>
+          <div class="project-gallery">
+            <a href="images/Magang/Monitoring 1.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/Magang/Monitoring 1.jpeg" alt="Dokumentasi acara SEF" loading="lazy"></a>
+            <a href="images/Magang/Monitoring 2.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/Magang/Monitoring 2.jpeg" alt="Dokumentasi tim SEF" loading="lazy"></a>
+            <a href="images/Magang/Monitoring 3.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/Magang/Monitoring 3.jpeg" alt="Dokumentasi kegiatan SEF 3" loading="lazy"></a>
+            
+            
+          </div>
+        </article>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <!-- ===== KONTAK ===== -->
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Kontak</h2>
       <div class="card contact-card">
-        <p><strong>Email:</strong> ahmadrazzaqnr10@gmail.com</p>
+        <p><strong>Email:</strong> <a href="mailto:ahmadrazzaqnr10@gmail.com">ahmadrazzaqnr10@gmail.com</a></p>
         <p><strong>Alamat:</strong> Jl. Pangeran Kejaksan, Sumber, Cirebon, Jawa Barat</p>
-        <p><strong>No Handphone:</strong> 081221683399</p>
+        <p><strong>No Handphone:</strong> <a href="tel:+6281221683399">081221683399</a></p>
       </div>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Ahmad Razzaq Nurman. All Rights Reserved.</p>
+      <p>&copy; 2026 Ahmad Razzaq Nurman. All Rights Reserved.</p>
     </div>
   </footer>
 
